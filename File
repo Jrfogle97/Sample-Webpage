@@ -1,0 +1,127 @@
+<html>
+<head>
+  <title>'Jacob's Portfolio'</title>
+  
+  <style>
+
+  @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+  @import url("http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css");
+  
+  
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    font: 14px/1 'Open Snas', sans-serif;
+    background: url(https://media.giphy.com/media/24hSCgjJnDOZq/giphy.gif) 80%;
+  }
+  
+  main {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 50px;
+    margin: 0 auto;
+    background: #fff;  
+  }
+  h1 {
+    padding: 40px 0;
+    font-weight:500;
+    text-align: center;
+    color: #FFF;
+  }
+  section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ccc;
+    
+  }
+  
+  #tab0:checked ~ #content0,
+  #tab1:checked ~ #content1,
+  #tab2:checked ~ #content2{
+    display: block;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 1px solid transparent;
+  }
+  
+  label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 5px;
+  }
+  
+  label:hover {
+    color: #666;
+    cursor: pointer;
+  }
+  
+  label[for*='0']:before{
+    content: '\f015'
+  }
+  
+  label[for*='1']:before{
+    content: '\f129'
+  }
+  label[for*='2']:before{
+    content: '\f09b'
+  }
+  input:checked + label {
+    color: #555;
+    border: 1px solid #ccc;
+    border-top: 2px solid #89cff0;
+    border-bottom: 1px solid #fff;
+  }
+  
+  p{
+    margin: 10px 10px 20px;
+    line-height: 1.5;
+  }
+  </style>
+</head> 
+<body>
+  <h1>Jacob's Portfolio</h1>
+  <main>
+    <input id="tab0" type='radio' name='tabs'checked>
+    <label for='tab0'>Home</label>
+    <input id="tab1" type='radio' name='tabs'>
+    <label for='tab1'>Personal Information</label>
+    <input id="tab2" type='radio' name='tabs'checked>
+    <label for='tab2'>GitHUB</label>
+   
+   <section id='content0'>
+      <p>
+      hello  
+      </p>
+    </section>
+    <section id='content1'>
+      <p>
+      <ul>
+   <li>Fact</li>
+   <li>Fact 2.</li>
+   <li>Fact 3.</li>
+   <li>Fact4.</li>
+</ul>
+       
+      </p>
+    </section>
+  <section id='content2'>
+      <p>
+      link
+      </p>
+    </section>
+  </main>
+</body>
+</html>
